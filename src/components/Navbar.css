@@ -1,0 +1,65 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #ececec;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Add this line to allow the navbar items to wrap on smaller screens */
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-right: 30px; /* Increase the right margin to create more space between items */
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Add a smooth transition for color change on hover */
+}
+
+.navbar-link:hover {
+  color: rgb(10, 135, 10); /* Change the color on hover */
+}
+
+.form-control {
+  margin: 0;
+}
+
+.btn-outline-light {
+  color: white;
+  border-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition for background color and text color change on hover */
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: rgb(62, 48, 48);
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar-list {
+    display: none; /* Hide the navbar list on smaller screens */
+  }
+
+  .navbar-brand {
+    display: block; /* Show the navbar brand on smaller screens */
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-brand {
+    display: none; /* Hide the navbar brand on larger screens */
+  }
+}

@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 90vh; /* Set height to 100% of the viewport height */
+  }
+  
+  .container-img {
+    margin-top: 0; /* Add 'px' unit to margin-top */
+    padding-left: 70px;
+  }
+  
+  .container-img img {
+    width: 90vw;
+    height: 72vh;
+    object-fit:fill; /* Maintain the aspect ratio and cover the container */
+    border-radius: 8px;
+    
+  }
+  
+  .vet-info {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 75px; /* Adjust padding as needed */
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .vet-address {
+    width: 20%; /* Adjust width as needed, reduced from 45% */
+  }
+  
+  .blog {
+    
+    width: 80%; /* Adjust width as needed, increased from 45% */
+  }
+  
